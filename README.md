@@ -1,4 +1,4 @@
-# Machine-Learning-Next-Day-Stock-Returns
+# Machine-Learning-Next-Day-Stock-Returns-MiniProject
 Developing models to predict continuous and categorical outputs for next day stock returns based off price data and investor sentiment data.
 
 Dataset: Yahoo Finance (SPY, LQD), AAII Investor Sentiment Survey
