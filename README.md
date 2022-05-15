@@ -19,7 +19,7 @@ Model inputs were varied 4 times:
 
 # Observations: If Categorical Accuracy, Precision (Down, Up), Recall (Down, Up),and F-1 Score (Down, Up). If Continuous RMSE, RRMSE
 
-No models do a sufficient enough job of predicting next day returns following the sentiment survey release. Since the classes are quite balanced, we can use the accuracy to quickly compare all models.
+No models do a sufficient enough job of predicting next day returns following the sentiment survey release. I believe this concludes the data used as inputs for the models ARE NOT predictive in nature to next day returns of the SPY ETF. Since the classes are quite balanced, we can use the accuracy to quickly compare all models.
 By doing so, Part 1 KNN1 and Part 2 DT2 stand out. Nevertheless, the f-1 score remains imbalanced in favor of up days for KNN1 and down days for DT2. This leads me to the conclusion that neither models 
 perform accurately enough to predict next day returns.
 
