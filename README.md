@@ -14,26 +14,27 @@ Model inputs were varied 4 times:
 - Part 1 = SPY Price derivatives and Bull %, Bear %, Neutral % (and related derivatives)
 
 
-# Observations: If Categorical Accuracy, Precision (Down, Up), Recall (Down, Up),and F-1 Score (Down, Up). If Continuous RMSE, RRMSE
+# Observations: If Categorical Accuracy, Precision (Down, Up), Recall (Down, Up),and F-1 Score (Down, Up). If Continuous RMSE, RRMSE, R2 Score
 
 No models do a sufficient enough job of predicting next day returns following the sentiment survey release. I believe this concludes the data used as inputs for the models ARE NOT predictive in nature to next day returns of the SPY ETF. Since the classes are quite balanced, we can use the accuracy to quickly compare all models.
-By doing so, Part 1 KNN1 and Part 2 DT2 stand out. Nevertheless, the f-1 score remains imbalanced in favor of up days for KNN1 and down days for DT2. This leads me to the conclusion that neither models 
+By doing so, Part 1 KNN1 and Part 1 SM1 stand out. Nevertheless, the f-1 score remains imbalanced in favor of up days for KNN1 and SM1. This leads me to the conclusion that neither models 
 perform accurately enough to predict next day returns.
 
 Top Models
 - Part 1: KNN1
+- Part 1: SM1
 
 
 Part 1:
-- LOGRM1 .53, (.54,.53), (.24,.80),(.33,.64)
-- LOGRM2 .51,(.52,.48), (.82,.18), (.63,.26)
-- LRM1 .009, 21.07
-- LRM2 .011,11.00
-- KNN1, adjusted with K = 41, .58, (.60,.57), (.34,.79), (.44,.64)
-- KNN2, adjusted with K = 16, .51, (.53,.45), (.67,.32), (.59,.38)
-- DT1 .50, (.47,.53), (.50,.49), (.49,.51)... RF1 .54, (.52,.56), (.5,.58), (.51,.57)
-- DT2 .51, (.51,.51), (.54,.49), (.53,.50)... RF2 .48, (.49,.46), (.75,.21), (.59,.29)
-- SM1 .52, (.53,.52), (.17,.86), (.25,.65)... Grid Search .51, (.50,.51), (.23,.78), (.32, .62)
+- LOGRM1 .52, (.48,.53), (.30,.71),(.37,.61)
+- LOGRM2 .50,(.52,.43), (.74,.22), (.61,.29)
+- LRM1 .01, -12.75, -.15
+- LRM2 .011,-14.53, -.153
+- KNN1, adjusted with K = 35, .58, (.55,.58), (.38,.73), (.45,.64)
+- KNN2, adjusted with K = 2, .52, (.54,.45), (.75,.24), (.63,.32)
+- DT1 .49, (.50,.49), (.49,.50), (.49,.49)... RF1 .52, (.54,.51), (.37,.68), (.44,.58)
+- DT2 .50, (.51,.49), (.56,.43), (.54,.46)... RF2 .51, (.52,.50), (.74,.27), (.61,.35)
+- SM1 .57, (.55,.58), (.32,.78), (.40,.67)... Grid Search .51, (.46,.56), (.53,.49), (.49, .52)
 
 # Install
 pip install numpy | conda install numpy
