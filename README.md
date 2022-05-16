@@ -1,9 +1,9 @@
 # Machine-Learning-Next-Day-Stock-Returns-MiniProject
 Developing models to predict continuous and categorical outputs for next day stock returns based off price data and investor sentiment data.
 
-Dataset: Yahoo Finance (SPY, LQD), AAII Investor Sentiment Survey
+Dataset: Yahoo Finance (SPY), AAII Investor Sentiment Survey
 
-36 Machine Learning models/algorithms were developed to study the behavior of SPY 1D returns AFTER the AAII Investor Sentiment Survey gets released.
+12 Machine Learning models/algorithms were developed to study the behavior of SPY 1D returns AFTER the AAII Investor Sentiment Survey gets released.
 Logistic Regression, Linear Regression, KNN, Decision Tree and Random Forest, Support Vector Machine models were run to predict categorical (up or down) and continuous next day returns.
 
 Returns were defined two ways:
