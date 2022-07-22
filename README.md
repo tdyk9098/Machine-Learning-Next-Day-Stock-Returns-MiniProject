@@ -20,6 +20,10 @@ No models do a sufficient enough job of predicting next day returns following th
 By doing so, Part 1 KNN1 and Part 1 SM1 stand out. Nevertheless, the f-1 score remains imbalanced in favor of up days for KNN1 and SM1. This leads me to the conclusion that neither models 
 perform accurately enough to predict next day returns.
 
+The models can all have various parameters tweaked to try and improve performance, however, heavy optimization does not seem worth it. 
+
+Future miniprojects / projects will have more of a focus on developing optimal features / model selection for the predicted outputs.
+
 Top Models
 - Part 1: KNN1
 - Part 1: SM1
